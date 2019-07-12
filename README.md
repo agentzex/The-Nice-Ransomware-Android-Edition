@@ -8,3 +8,5 @@ This new edition, should work on all Android versions (not tested though, and I 
 This project is meant to be used for educational purposes only, that's why, this time, I left the malicious code out of this repo.
 If you wish to have the complete code, please contact me and explain who you are and what is your goal, but bear in mind that I will release it only for people I know. 
 Thanks for your understanding :)
+
+Blog post - https://whiterosezex.blogspot.com/2019/07/theniceransomware-android-ndk-edition.html
