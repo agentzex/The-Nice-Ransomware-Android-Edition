@@ -10,3 +10,5 @@ If you wish to have the complete code, please contact me and explain who you are
 Thanks for your understanding :)
 
 Blog post - https://whiterosezex.blogspot.com/2019/07/theniceransomware-android-ndk-edition.html
+
+![alt text](https://raw.githubusercontent.com/agentzex/The-Nice-Ransomware-Android-Edition/blob/master/screenshot.JPG)
