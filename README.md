@@ -1,5 +1,4 @@
 # The-Nice-Ransomware-Android-Edition
-Android NDK Ransomware PoC
 
 Did you all miss TheNiceRansomware ?  https://github.com/agentzex/The-Nice-Ransomware 
 
