@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hello_jni"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zex.TheNiceRansomware.TheNiceRansomwareNDK">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_weight="1"
+        android:text="WARNING - if switched off - original files will be deleted after encryption"
+        android:textColor="@android:color/holo_red_light" />
+
+    <Switch
+        android:id="@+id/keep_original_files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_margin="20px"
+        android:layout_marginStart="10px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="10px"
+        android:layout_marginEnd="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginBottom="10px"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="Keep Original Files" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keep_original_files"
+        android:layout_marginTop="50px"
+        android:layout_weight="1"
+        android:text="On - Encryption, Off - Decryption "
+        android:textColor="@android:color/holo_red_light" />
+
+    <Switch
+        android:id="@+id/encrypt_or_decrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginStart="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_marginEnd="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="20px"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="Encrypt or Decrypt" />
+
+    <LinearLayout
+        android:id="@+id/linLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/encrypt_or_decrypt"
+        android:layout_marginTop="100px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:text="Start"
+            android:textColor="#F44336" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linLayout"
+        android:layout_marginBottom="20px"
+        android:layout_weight="1"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/result_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50px"
+        android:gravity="bottom|center" />
+
+</RelativeLayout>
