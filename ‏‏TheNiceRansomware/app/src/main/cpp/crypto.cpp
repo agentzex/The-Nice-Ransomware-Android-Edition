@@ -42,10 +42,20 @@ bool is_encrypt = false;
 bool keep_original_file = true; //WARNING: if true - original files will be kept on encryption and locked files will have .unlocked extension on decryption, if false - well, you got the idea...
 
 
+string to_lower(string &my_string){
+    string new_string = "";
+    for (char const &c: my_string) {
+        new_string += tolower(c);
+    }
+    return new_string;
+}
+
 
 bool is_needed_file_type(string &file_name){
+    string temp = file_name.substr(file_name.find_last_of(".") + 1);
+    temp = to_lower(temp);
     for (const auto& f : FILES_TYPES){
-        if(file_name.substr(file_name.find_last_of(".") + 1)  == f){
+        if(temp == f){
             return true;
         }
     }
